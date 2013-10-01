@@ -40,7 +40,7 @@ public class CardFlipActivity extends Activity
     /**
      * A handler object, used for deferring UI operations.
      */
-    private Handler mHandle = new Handler();
+    private Handler mHandle1 = new Handler();
 
     /**
      * Whether or not we're showing the back of the card (otherwise showing the front).
@@ -143,7 +143,7 @@ public class CardFlipActivity extends Activity
         // Defer an invalidation of the options menu (on modern devices, the action bar). This
         // can't be done immediately because the transaction may not yet be committed. Commits
         // are asynchronous in that they are posted to the main thread's message loop.
-        mHandle.post(new Runnable() {
+        mHandle1.post(new Runnable() {
             @Override
             public void run() {
                 invalidateOptionsMenu();
